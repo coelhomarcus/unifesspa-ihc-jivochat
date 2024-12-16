@@ -169,7 +169,7 @@ nav li a {
 }
 
 .main .saul {
-    width: 400px;
+    height: 80vh;
     animation: fade-up 0.5s;
     display: flex;
 }
