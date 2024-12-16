@@ -33,6 +33,7 @@ body {
     padding: 0;
     font-family: "Poppins", Arial;
     width: 100vw;
+    background-color: #000;
     overflow-x: hidden;
 }
 
@@ -41,6 +42,8 @@ header {
     height: 100px;
     background-color: #000;
     color: #fff;
+    position: fixed;
+    z-index: 9999;
 }
 
 .container {
@@ -111,22 +114,33 @@ nav li a {
 }
 
 .main {
-    background: #000;
-    background: linear-gradient(to bottom, #000 80%, #9A9A9A 200%);
-    height: calc(100vh - 100px);
+    background-image: url(../../media/background.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
     width: 100%;
     overflow: hidden;
 }
 
+.background-filter {
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 1) 15%, rgba(255, 255, 255, 0));
+    backdrop-filter: blur(10px);
+    -webkit-backdrop-filter: blur(10px);
+    box-shadow: 0 8px 32px 0 rgba(0, 0, 0, 0.37);
+    height: 100vh;
+}
+
 .main-saul {
     justify-content: space-between;
+    align-items: flex-end;
 }
 
 .main--texts {
+    height: calc(100vh - 100px);
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: flex-start;
-    margin: 0;
     animation: fade-up 0.5s;
 }
 
@@ -155,6 +169,11 @@ nav li a {
 }
 
 .main .saul {
-    width: 420px;
+    width: 400px;
     animation: fade-up 0.5s;
+    display: flex;
+}
+
+.saul img {
+    justify-content: flex-end;
 }
