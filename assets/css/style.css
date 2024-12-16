@@ -83,8 +83,16 @@ a:hover .word2 {
 
 .menu-opener {
     display: none;
+    width: 40px;
+    height: 40px;
     cursor: pointer;
 }
+
+.mm-line {
+  height: 5px;
+  background-color: #ED1B24;
+}
+
 
 nav ul {
     display: flex;
