@@ -227,8 +227,8 @@ nav li a {
         z-index: 9999;
         background-color: rgba(0, 0, 0, 0.9);
         width: 70vw;
-        height: calc(100vh - 100px);
-        top: 100px;
+        height: calc(100vh - 80px);
+        top: 80px;
         right: 0;
         animation: fade-up 0.5s;
     }
@@ -304,8 +304,8 @@ nav li a {
         z-index: 9999;
         background-color: rgba(0, 0, 0, 0.9);
         width: 70vw;
-        height: calc(100vh - 100px);
-        top: 100px;
+        height: calc(100vh - 80px);
+        top: 80px;
         right: 0;
         animation: fade-up 0.5s;
     }
